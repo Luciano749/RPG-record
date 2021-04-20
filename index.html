@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- ionIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="../RPG-record/css/main.css">
+    <link rel="stylesheet" href="../RPG-record/css/style.css">
+    <link rel="stylesheet" href="../RPG-record/css/responsiveness.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="images-container">
+            <img id="big-image">
+
+            <div id="small-images" class="active">
+                <div id="carousel" class="active">
+                    <img src="../RPG-record/img/archer.jpg" onclick="showImage(this)">
+                    <img src="../RPG-record/img/knight.jpg" onclick="showImage(this)">
+                    <img src="../RPG-record/img/monk.jpg" onclick="showImage(this)">
+                    <img src="../RPG-record/img/witch.jpg" onclick="showImage(this)">
+                </div>
+            </div>
+        </div>
+
+        <div id="life-container">
+            <div id="life-bar"></div>
+            <h3 id="life-text">
+                <input oninput="lifeChange()" id="current-life" type="number">
+                /
+                <input oninput="lifeChange()" id="max-life" type="number">
+            </h3>
+
+            <ion-icon name="heart"></ion-icon>
+        </div>
+        <!--life-container-->
+
+
+        <div id="stars-container">
+            <div id="stars" class="stars">
+                <h2>FORÇA:</h2>
+                <ion-icon name="star" id="0" onclick="rating(this)"></ion-icon>
+                <ion-icon name="star" id="1" onclick="rating(this)"></ion-icon>
+                <ion-icon name="star" id="2" onclick="rating(this)"></ion-icon>
+                <ion-icon name="star" id="3" onclick="rating(this)"></ion-icon>
+                <ion-icon name="star" id="4" onclick="rating(this)"></ion-icon>
+            </div>
+            <!--stars-->
+
+            <div id="stars-1" class="stars">
+                <h2>INTELIGÊNCIA:</h2>
+                <ion-icon name="star" id="0" onclick="rating1(this)"></ion-icon>
+                <ion-icon name="star" id="1" onclick="rating1(this)"></ion-icon>
+                <ion-icon name="star" id="2" onclick="rating1(this)"></ion-icon>
+                <ion-icon name="star" id="3" onclick="rating1(this)"></ion-icon>
+                <ion-icon name="star" id="4" onclick="rating1(this)"></ion-icon>
+            </div>
+            <!--stars-->
+
+            <div id="stars-2" class="stars">
+                <h2>AGILIDADE:</h2>
+                <ion-icon name="star" id="0" onclick="rating2(this)"></ion-icon>
+                <ion-icon name="star" id="1" onclick="rating2(this)"></ion-icon>
+                <ion-icon name="star" id="2" onclick="rating2(this)"></ion-icon>
+                <ion-icon name="star" id="3" onclick="rating2(this)"></ion-icon>
+                <ion-icon name="star" id="4" onclick="rating2(this)"></ion-icon>
+            </div>
+            <!--stars-->
+        </div>
+
+        <div id="inputs-container">
+            <div class="input-area">
+                <label for="name"> NOME </label>
+                <input type="text" oninput="inputSave()" id="name">
+            </div>
+
+            <div class="input-area">
+                <label> CLASSE </label>
+                <input type="text" oninput="inputSave()" id="age">
+            </div>
+        </div>
+        <!--inputs-container-->
+    </div>
+
+
+    <!-- javaScript -->
+    <script src="../RPG-record/js/script.js"></script>
+</body>
+
+</html>

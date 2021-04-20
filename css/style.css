@@ -1,0 +1,277 @@
+body {
+  background-color: bisque;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* --------------------------------------- */
+
+#container {
+  height: 100rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+/* --------------------------------------- */
+
+#images-container {
+  width: 62rem;
+  height: 50rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+#images-container img {
+  width: 50rem;
+  height: 100%;
+
+  border-radius: 1rem;
+}
+
+#small-images {
+  height: 100%;
+}
+
+#carousel {
+  height: 100%;
+  width: 100%;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#small-images img {
+  height: 10rem;
+  width: 10rem;
+
+  border-radius: 3rem;
+  border: 0.5rem solid #4283b8;
+
+  cursor: pointer;
+  -webkit-transition: border 200ms;
+  -o-transition: border 200ms;
+  transition: border 200ms;
+}
+
+#small-images img:hover {
+  border: 0.5rem solid #2a6290;
+}
+/* --------------------------------------- */
+#life-container {
+  width: 35rem;
+  height: 3.5rem;
+  background-color: #a3a09a;
+
+  border-radius: 1rem;
+  position: relative;
+}
+
+#life-bar {
+  width: 0;
+  height: 100%;
+  background-color: rgb(184, 0, 0);
+
+  border-radius: 1rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -webkit-transition: width 300ms;
+
+  -o-transition: width 300ms;
+
+  transition: width 300ms;
+}
+
+#life-text {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#life-text input {
+  width: 6rem;
+  background-color: transparent;
+
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+#life-text input:nth-child(1) {
+  text-align: end;
+}
+
+#life-text input:nth-child(2) {
+  text-align: start;
+}
+
+#life-container ion-icon {
+  font-size: 2.5rem;
+  color: rgb(17, 184, 17);
+
+  position: absolute;
+  left: 2rem;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* --------------------------------------- */
+
+#stars-container {
+  height: 13rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* --------------------------------------- */
+.input-area {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+#inputs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  height: 20rem;
+}
+
+#inputs-container input {
+  font-size: 2rem;
+
+  padding: 1rem 3rem;
+
+  border-bottom: 0.3rem solid transparent;
+  -webkit-transition: border-bottom 200ms;
+  -o-transition: border-bottom 200ms;
+  transition: border-bottom 200ms;
+}
+
+#inputs-container input:focus {
+  border-bottom: 0.3rem solid #64b5f6;
+}
+
+#inputs-container label {
+  font-size: 1.5rem;
+  color: rgb(58, 57, 57);
+  font-weight: bold;
+}
+
+/* ---------------------------------------- */
+
+.stars {
+  width: 30rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.stars ion-icon {
+  font-size: 3rem;
+  color: rgb(163, 160, 154);
+
+  margin: 0 0.5rem;
+
+  cursor: pointer;
+  -webkit-transition: color 250ms;
+  -o-transition: color 250ms;
+  transition: color 250ms;
+}
